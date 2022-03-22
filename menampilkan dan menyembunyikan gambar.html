@@ -1,0 +1,23 @@
+<html>
+    <head> 
+        <title> Menampilkan dan Menyembunyikan gambar </title>
+       <script src="js\jquery-3.6.0.min.js"></script> 
+       <script type="text/javascript">
+        $(document).ready(function(){
+        $(".sembunyi").click(function() {$("#foto").hide("slow") });
+        $(".sembunyi1").click(function() {$("#foto1").hide("slow") });
+        $(".tampil").click(function() {$("#foto").show("slow") });
+        $(".tampil1").click(function() {$("#foto1").show("slow") });
+    });
+         </script>
+    </head>
+    <body>
+        <button class="sembunyi">sembunyikan</button>
+        <button class="tampil">tampilkan</button>
+        <br> </br>
+        <button class="sembunyi1">sembunyikan</button>
+        <button class="tampil1">tampilkan</button>
+        <p><img id="foto" src="awan.jpg"></p>
+        <p><img id="foto1" src="roket.jpg"></p>
+    </body>
+</html>
